@@ -1,6 +1,8 @@
-name: Run Python Script
+name: Run Python Script Every Night
 
 on:
+  schedule:
+    - cron: '25 20 * * *'  # ריצה כל יום ב-23:25 לפי שעון ישראל (20:25 UTC)
   workflow_dispatch:
 
 jobs:
